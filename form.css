@@ -1,0 +1,39 @@
+
+
+
+h1{
+     background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);;
+background-clip: text;
+color: transparent;
+font-size: larger;
+ font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+legend{
+    background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+background-clip: text;
+color: transparent;
+font-size: larger;
+font-family: monospace;
+}
+label{
+    
+    font-weight: 400px;
+
+
+}
+input:focus{
+    background-color: rgb(255, 255, 255);
+
+}
+input+p{
+    display: none;
+}
+input:hover+p{
+display: inline;
+background-color:rgb(192, 226, 226);
+}

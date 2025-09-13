@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Course Registration Form</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>Course Registration Form</h1>
+        <form>
+          
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name:</label></td>
+                        <td><input type="text" id="fname" name="fname" placeholder="Ex: Punith" required><p>Enter Your Name</p></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Surname:</label></td>
+                        <td><input type="text" id="lname" name="lname" placeholder="Ex: H K"><p>Enter Your Surname</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile Number:</label></td>
+                        <td><input type="tel" id="mobile" name="mobile" placeholder="Ex: 987-897-0987" required><p>Enter your mobile Number</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Ex: harshit@gmail.com" required><p>Enter your Email</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" placeholder="min 8 characters" minlength="8" required><p>Enter your Password</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm_password">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" placeholder="min 8 characters" minlength="8" required><p>Enter your Confirm Password</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td><input type="date" id="dob" name="dob" required><p>Select your DOB</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" min="18" max="100" required><p>Enter Your Age</p></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="others" name="gender" value="Others">
+                            <label for="others">Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Select Country:</label></td>
+                        <td>
+                            <select id="country" name="country">
+                                <option value="India">INDIA</option>
+                                <option value="USA">USA</option>
+                                <option value="China">China</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="picture">Upload Picture:</label></td>
+                        <td><input type="file" id="picture" name="picture"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+          
+            <fieldset>
+                <legend>Course Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="course">Select Course:</label></td>
+                        <td>
+                            <select id="course" name="course">
+                                <option value="Java Full Stack">Java Full Stack</option>
+                                <option value="DSA">DSA</option>
+                                <option value="AI">AI</option>
+                                <option value="Data Science">Data Science</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Mode:</td>
+                        <td>
+                            <input type="radio" id="online" name="delivery_mode" value="Online">
+                            <label for="online">ONLINE</label>
+                            <input type="radio" id="offline" name="delivery_mode" value="Offline">
+                            <label for="offline">OFFLINE</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="institute">INSTITUTE NAME:</label></td>
+                        <td><input type="text" id="institute" name="institute" value="TAP ACADEMY" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="knowledge">Choose your present Coding knowledge level:</label></td>
+                        <td><input type="range" id="knowledge" name="knowledge" min="1" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comments">Comments:</label></td>
+                        <td><textarea id="comments" name="comments" rows="4" cols="30"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
