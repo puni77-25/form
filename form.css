@@ -36,4 +36,9 @@ input+p{
 input:hover+p{
 display: inline;
 background-color:rgb(192, 226, 226);
+
+}
+body{
+     background: linear-gradient(180deg,#f5f7fb 0%, #e8f0ff 100%);
+  color: #1f2937;
 }
